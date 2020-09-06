@@ -77,7 +77,7 @@ export class NoduleAnalysisComponent implements OnInit {
     {
       "id" : 1,
       "name": "Nodule 1",
-      "image" : "../../../assets/thumbnail_0.png",
+      "image" : "/assets/thumbnail_0.png",
       "lobe": "Right Upper",
       "type" : "Solid",
       "classification": 10,
@@ -91,7 +91,7 @@ export class NoduleAnalysisComponent implements OnInit {
     {
       "id" : 2,
       "name": "Nodule 2",
-      "image" : "../../../assets/thumbnail_4.png",
+      "image" : "/assets/thumbnail_4.png",
       "lobe": "Left Lower",
       "type" : "Part-solid",
       "classification": 35,
@@ -105,7 +105,7 @@ export class NoduleAnalysisComponent implements OnInit {
     {
       "id" : 3,
       "name": "Nodule 3",
-      "image" : "../../../assets/thumbnail_5.png",
+      "image" : "/assets/thumbnail_5.png",
       "lobe": "Right Lower",
       "type" : "Ground-glass",
       "classification": 19,

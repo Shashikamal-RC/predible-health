@@ -43,19 +43,19 @@ export class HighAttenuationAnalysisComponent implements OnInit {
         </head>
         <body>
             <h1><strong>High Attenuation Analysis</strong></h1>
-            <img src="../../../assets/fibrosis_0.png" alt="amphysema_0" width="300px">
+            <img src="/assets/fibrosis_0.png" alt="amphysema_0" width="300px">
             <br/>
-            <img src="../../../assets/fibrosis_20.png" alt="amphysema_20" width="300px">
+            <img src="/assets/fibrosis_20.png" alt="amphysema_20" width="300px">
               <p style="text-align: center"><strong>Fibrosis</strong></p>
 
-            <img src="../../../assets/honeycombing_0.png" alt="honeycombing_0" width="300px">
+            <img src="/assets/honeycombing_0.png" alt="honeycombing_0" width="300px">
             <br/>
-            <img src="../../../assets/honeycombing_20.png" alt="heneycombing_20" width="300px">
+            <img src="/assets/honeycombing_20.png" alt="heneycombing_20" width="300px">
               <p style="text-align: center"><strong>Honey Combing</strong></p>
 
-            <img src="../../../assets/gg_0.png" alt="gg_0" width="300px">
+            <img src="/assets/gg_0.png" alt="gg_0" width="300px">
             <br/>
-            <img src="../../../assets/gg_20.png" alt="gg_20" width="300px">
+            <img src="/assets/gg_20.png" alt="gg_20" width="300px">
               <p style="text-align: center"><strong>Ground glass</strong></p>
 
             <br>

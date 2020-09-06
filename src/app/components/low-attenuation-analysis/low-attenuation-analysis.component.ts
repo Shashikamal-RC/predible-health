@@ -17,9 +17,9 @@ export class LowAttenuationAnalysisComponent implements OnInit {
 
   createDocument(data){
     this.mycontent = `<h1><strong>Low Attenuation Analysis</strong></h1>
-      <img src="../../../assets/emphysema_0.png" alt="amphysema_0" width="300px">
+      <img src="/assets/emphysema_0.png" alt="amphysema_0" width="300px">
       <br/>
-      <img src="../../../assets/emphysema_20.png" alt="amphysema_20" width="300px">
+      <img src="/assets/emphysema_20.png" alt="amphysema_20" width="300px">
        ${this.getData(data)}
     `
   }
