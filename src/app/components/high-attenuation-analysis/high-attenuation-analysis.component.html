@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm">
+            <img src="../../../assets/fibrosis.gif" alt="fibrosis" width="600px"> 
+                    <p><strong>Fibrosis</strong></p> 
+            <img src="../../../assets/honeycombing.gif" alt="honeycombing" width="600px">
+                    <p><strong>HoneyCombing</strong></p>
+            <img src="../../../assets/gg.gif" alt="gg" width="600px">
+                    <p><strong>Ground glass</strong></p>
+
+            <h1><strong>Quantification</strong></h1>
+            <app-table-comp [tableData]="tableData"></app-table-comp>
+            <br>
+            <h1><strong>Fibrosis Distribution</strong></h1>
+            <app-table-comp [tableData]="tableData"></app-table-comp>
+            <br>
+            <app-table-comp [tableData]="tableData"></app-table-comp>
+        </div>
+        <div class="col-sm">
+            <app-report-editor [reportContent] = "mycontent" ></app-report-editor>
+        </div>
+    </div>
+    <div class="row b-class">
+        <button class="btn btn-info mr-1" >Approve Report</button>
+        <button class="btn btn-info" >Download</button>
+    </div>
+</div>

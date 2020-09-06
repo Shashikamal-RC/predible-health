@@ -1,0 +1,31 @@
+.container-fluid {
+    padding: 20px 100px 20px 100px;
+}
+
+.b-class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px ;
+}
+
+td, th {
+    padding-right: 20px;
+}
+
+.bold { 
+    background-color: #b3e0e2;
+    font-weight:800 ;
+}
+
+td{
+    border-bottom: 2px solid #00B5AD;
+}
+
+#captionStyle {
+    caption-side: top;
+}
+
+caption{
+    text-align: center;
+}

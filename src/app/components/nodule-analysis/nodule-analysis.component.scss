@@ -1,0 +1,35 @@
+.container-fluid {
+    padding: 20px 100px 20px 100px;
+}
+
+.b-class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px ;
+}
+
+.backdropBackground {
+    color: blueviolet;
+}
+
+.nodule {
+    border-bottom: 2px solid;
+    border-bottom-color: #00B5AD;
+    padding-top: 20px;
+}
+
+::ng-deep .mat-tooltip {
+    color: white !important;
+    background-color: black;
+    font-size: 15px;
+    font-weight: 500 ;
+}
+
+.left {
+    border-right: 5px solid #00B5AD;
+}
+
+.c-box {
+    margin: 1px;
+}

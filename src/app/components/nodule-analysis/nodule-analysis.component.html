@@ -1,0 +1,89 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm left">
+            <div *ngFor="let item of data; let i=index" class="row nodule">
+                <div class="col-sm col-md">
+                    <h1><b>{{item.name}}</b></h1>
+                    <table>
+                        <tr>
+                            <td>Lobe:</td>
+                            <td>
+                                <select (change)="createDocument()" name="lobe_data" id="lobe_data" [(ngModel)]="item.lobe" required>
+                                    <option value="-1">Select Lobe</option>
+                                    <option  *ngFor="let lobe of lobes" value={{lobe.name}}>
+                                        {{lobe.name}}
+                                    </option> 
+                                </select>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>Type:</td>
+                            <td>
+                                <select (change)="createDocument()" name="type_data" id="type_data" [(ngModel)]="item.type" required>
+                                    <option value="-1">Select Type</option>
+                                    <option  *ngFor="let type of types" value={{type.name}}>
+                                        {{type.name}}
+                                    </option> 
+                                </select>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>%Clacification:</td>
+                            <td><input type="number" (chnage)="createDocument()" [(ngModel)]="item.classification" id="quantity" name="quantity" min="0" max="100"> % </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>Size:</td>
+                            <td><input type="number" (change)="createDocument()" [(ngModel)]="item.size" id="quantity" name="quantity" min="0" max="100"> mm </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>Volume:</td>
+                            <td><input (change)="createDocument()" type="number" [(ngModel)]="item.volume" id="quantity" name="quantity" min="0" max="100"> ml </td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>Border:</td>
+                            <td>
+                                <select (change)="createDocument()" name="border_data" id="border_data" [(ngModel)]="item.border" required>
+                                    <option value="-1">Select Type</option>
+                                    <option  *ngFor="let border of borders" [value]="border.name">
+                                        {{border.name}}
+                                    </option> 
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm col-md">
+                    <img src={{item.image}} alt="data">
+                    <input [(ngModel)]="item.falsepositive" class="c-box" (change)="createDocument()" matTooltip="Mark as false positive" type="checkbox">
+                    <input [(ngModel)]="item.mostsignificant" class="c-box" (change)="createDocument()" matTooltip="Mark as most significant" type="checkbox">
+                    <input [(ngModel)]="item.addtoreport"class="c-box" (change)="createDocument()" matTooltip="Add To Report" type="checkbox">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div>
+                Fleischner Risk Category <i (click)="openDialog()" class="fa fa-info-circle" aria-hidden="true"></i> :
+                <input (change)="riskData()" 
+                        id="1" type="radio" name="risk" 
+                        type="radio" [value]="true" 
+                        [(ngModel)]="risk"> High Risk 
+
+                <input (change)="riskData()" 
+                        id="2" type="radio" name="risk" 
+                        type="radio" [value]="false" 
+                        [(ngModel)]="risk"> Low risk
+            </div>
+            <br/>
+            <app-report-editor [reportContent] = "mycontent" ></app-report-editor>
+        </div>
+    </div>
+    <div class="row b-class">
+        <button class="btn btn-info mr-1" >Approve Report</button>
+        <button class="btn btn-info" >Download</button>
+    </div>
+</div>

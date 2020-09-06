@@ -1,0 +1,32 @@
+<table>
+    <tr>
+        <th colspan="2" class="hide"></th>
+        <th colspan="2">Fibrosis</th>
+        <th colspan="2">HoneyCombing</th>
+        <th colspan="2">Ground glass</th>
+        <th colspan="2">Normal</th>
+    </tr>
+    <tr>
+        <td class="hide"></td>
+        <td class="hide"></td>
+        <td>%</td>
+        <td>mL</td>
+        <td>%</td>
+        <td>mL</td>
+        <td>%</td>
+        <td>mL</td>
+        <td>%</td>
+        <td>mL</td>
+    </tr>
+    <tr *ngFor="let data of tableData">
+        <td colspan="2">{{data.index}}</td>
+        <td>{{data.data[0]}}</td>
+        <td>{{data.data[1]}}</td>
+        <td>{{data.data[2]}}</td>
+        <td>{{data.data[3]}}</td>
+        <td>{{data.data[4]}}</td>
+        <td>{{data.data[5]}}</td>
+        <td>{{data.data[6]}}</td>
+        <td>{{data.data[7]}}</td>
+    </tr>
+</table>

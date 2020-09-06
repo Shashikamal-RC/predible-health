@@ -1,0 +1,12 @@
+<ckeditor [(ngModel)]="reportContent" 
+        #myckeditor="ngModel"
+        name="myckeditor"
+        required
+        [config]="ckeConfig" 
+        debounce="500" 
+        (paste)="onPaste($event)"
+        (change)="onChange($event)">
+</ckeditor> 
+<div class="copybutton">
+    <button [cdkCopyToClipboard]="reportContent" class="btn btn-info">Copy To Clipboard</button>
+</div>

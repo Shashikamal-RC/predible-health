@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm">
+            <img src="../../../assets/emphysema.gif" alt="emphysema" width="600px">
+            <table id="captionStyle">
+                <caption>LAA: Low Attenuation Areas(Less than -950HU)</caption>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Volume(L)</th>
+                    <th>Percentage</th>
+                    <th>LAA(%)</th>
+                </tr>
+                <tr *ngFor="let item of tableData">
+                    <td> <p *ngIf="!item.heighlight"> H </p> </td>
+                    <td [ngClass]="{'bold': item.heighlight === true}" >{{item.index}}</td>
+                    <td [ngClass]="{'bold': item.heighlight === true}" >{{item.volume}}</td>
+                    <td [ngClass]="{'bold': item.heighlight === true}" >{{item.percentage}}</td>
+                    <td [ngClass]="{'bold': item.heighlight === true}" >{{item.lla}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-sm">
+            <app-report-editor [reportContent] = "mycontent" ></app-report-editor>
+        </div>
+    </div>
+    <div class="row b-class">
+        <button class="btn btn-info mr-1" >Approve Report</button>
+        <button class="btn btn-info" >Download</button>
+    </div>
+</div>
